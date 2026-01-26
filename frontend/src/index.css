@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Black and white theme overrides */
+.bg-indigo-600 {
+  background-color: #000000 !important;
+}
+
+.bg-indigo-700 {
+  background-color: #1a1a1a !important;
+}
+
+.text-indigo-600 {
+  color: #000000 !important;
+}
+
+.text-indigo-500 {
+  color: #333333 !important;
+}
+
+.border-indigo-500 {
+  border-color: #000000 !important;
+}
+
+.ring-indigo-500 {
+  --tw-ring-color: #000000 !important;
+}
+
+.focus\:border-indigo-500:focus {
+  border-color: #000000 !important;
+}
+
+.focus\:ring-indigo-500:focus {
+  --tw-ring-color: #000000 !important;
+}
