@@ -989,25 +989,7 @@ Show mock Slack message:
 
 ---
 
-### Demo Component: Influence Narrative
 
-**For the interview, include this in your demo:**
-
-**Slide: "How I Would Drive Adoption"**
-
-1. **Start Small:** Pilot with 1 team who already trusts me
-2. **Gather Proof:** Real metrics, real quotes, real examples
-3. **Leverage Champions:** Let engineers sell to engineers
-4. **Remove Friction:** Make it stupidly easy to try
-5. **Show Success:** Create visibility and social proof
-6. **Scale Gradually:** Don't mandate, let it spread organically
-
-**Say this:**
-> "I learned from my LLM workflow adoption at JPMorgan that you can't 
-> force adoption of developer tools. You have to show value, remove 
-> friction, and let engineers come to you. Here's how I'd do that..."
-
----
 
 ## Design Collaboration
 
