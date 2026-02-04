@@ -739,6 +739,52 @@ Per-repo configuration for customizing CodeGuard behavior.
 
 ---
 
+### Testing
+
+#### Backend Tests (Pytest)
+
+| Test File | Coverage |
+|-----------|----------|
+| `test_api.py` | API endpoints: root, health, analyses, feedback, metrics, repos, webhook |
+| `test_models.py` | Database models: PRAnalysis, Issue, Feedback creation and relationships |
+| `test_schemas.py` | Pydantic schemas: validation, serialization |
+| `test_services.py` | Service layer: GitHub client, analyzer |
+| `conftest.py` | Fixtures: test database, sample data |
+
+**Run backend tests:**
+```bash
+cd backend && python -m pytest
+```
+
+#### Frontend Tests (Vitest)
+
+| Test File | Coverage |
+|-----------|----------|
+| `StatusBadge.test.jsx` | Status badge component rendering |
+| `SeverityBadge.test.jsx` | Severity badge component rendering |
+| `CategoryBadge.test.jsx` | Category badge component rendering |
+| `StatsCard.test.jsx` | Stats card component rendering |
+| `MetricsGrid.test.jsx` | Metrics grid component rendering |
+| `AnalysesList.test.jsx` | Analyses list component rendering |
+
+**Run frontend tests:**
+```bash
+cd frontend && npm test
+```
+
+#### Test Coverage Summary
+
+| Layer | Test Type | Status |
+|-------|-----------|--------|
+| API Endpoints | Integration | ✅ Implemented |
+| Database Models | Unit | ✅ Implemented |
+| Pydantic Schemas | Unit | ✅ Implemented |
+| Services | Unit | ✅ Implemented |
+| React Components | Unit | ✅ Implemented |
+| End-to-End | E2E | ❌ Not implemented |
+
+---
+
 ### Performance Considerations
 
 #### Target SLAs
